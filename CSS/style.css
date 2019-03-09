@@ -1,0 +1,346 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    background: #001233;
+}
+
+.navbar {
+    background: #001233 !important;
+}
+
+.navbar > a {
+    font-size: 16px;
+}
+
+.navbar h1 {
+    position: relative;
+    left: 35vw;
+    font-family: 'Pacifico', cursive;
+    color: white;
+}
+
+@media (max-width:1030px) {
+    .navbar h1 {
+        position: relative;
+        left: 0;
+        font-family: 'Pacifico',  cursive;
+        text-align: center !important;
+        color: white;
+    }
+}
+
+@media only screen and (min-width:300px) {
+    .jumbotron {
+        width: 100% !important;
+    }
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 731px) and (orientation:landscape) {
+    hr {
+        width: 100%;
+    }
+    .jumbotron {
+        width: 117% !important;
+        height: 200px !important;
+    }
+}
+
+@media only screen and (min-width: 560px) and (max-width: 570px) and (orientation:landscape) {
+        hr {
+        width: 100%;
+    }
+    .jumbotron {
+        width: 100% !important;
+        height: 200px !important;
+    }
+}
+
+@media only screen and (min-width: 730px) and (max-width: 740px) and (orientation:landscape) {
+    .jumbotron {
+        width: 110% !important;
+        height: 200px !important;
+    }
+}
+
+.navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    
+}
+
+.navbar ul a {
+    font-size: 18px;
+    color: white !important;
+}
+
+.navbar ul li {
+    transition: .6s;
+}
+
+
+.navbar ul > li:hover {
+    background: black;
+}
+
+.navbar ul > .clear:hover {
+    background: #001233;
+}
+
+.btn-primary:hover {
+    background: black;
+}
+
+.brand {
+    font-size: 35px;
+    color: white !important;
+}
+
+#break {
+    height: 20px;
+    background: white;
+}
+
+.clear {
+    margin-left: 10px;
+    margin-top: -7px;
+}
+
+.collapse {
+    font-weight: 300;
+    margin-left: 0;
+}
+
+.collapse .active a{
+    font-weight: 600;
+    color: #c6d9ec !important;
+}
+
+.dropdown-item:hover {
+    background-color: orange!important;
+}
+
+.loader {
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background: white;
+
+}
+
+.loader-container {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    left: 42%;
+}
+
+.loader-container > div {
+    position: relative;;
+    top: 45vh;
+    left: 40%;
+    display: inline-block;
+    height: 20px;
+    width: 5px;
+    background: red;
+    
+}
+
+#one, #three, #five {
+    animation: animate 1s infinite;
+}
+
+#two, #four {
+    height: 10px;
+    border-radius: 5px;
+    animation: animate2 1s infinite;
+    animation-delay: .1s;
+    
+}
+
+.loader p {
+    position: absolute;
+    top: 49vh;
+    font-family: cursive;
+    left: 35%;
+    margin-top: 0;
+    color: red;
+}
+
+
+span:nth-child(1) {
+    animation: animate3 1s infinite;
+    opacity: 0;
+}
+
+span:nth-child(2) {
+    animation: animate4 1s infinite;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+span:nth-child(3) {
+    animation: animate5 1s infinite;
+    animation-delay: 2s;
+    opacity: 0;
+}
+
+@keyframes animate {
+    0% {
+        top: 44vh;
+    }
+    
+    50% {
+        top: 46vh;
+    }
+    
+    100% {
+        top: 44vh;
+    }
+}
+
+
+@keyframes animate2 {
+    0% {
+        top: calc(46vh+2px);
+    }
+    
+    50% {
+        top: 44vh
+    }
+    
+    100% {
+        top: calc(46vh+2px);
+    }
+}
+
+
+@keyframes animate3 {
+        0% {
+            opacity: 0;
+        }
+        33.33% {
+            opacity: 1;
+        }
+}
+
+@keyframes animate4 {
+        0% {
+            opacity: 0;
+        }
+        66.66% {
+            opacity: 1;
+        }
+}
+
+@keyframes animate5 {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+}
+
+.skill-container {
+    width: 80%;
+    margin: 40px auto;
+    color: white;
+}
+
+.skill-container > p {
+    margin-left: 10%;
+}
+
+.progress {
+    margin: auto;
+    height: 10px;
+    width: 80%;
+    margin-bottom: 20px;
+    overflow: visible !important;
+}
+
+.progress-bar {
+    transition: .5s !important;
+    width: 90%;
+    background: linear-gradient(to right, rgb(0, 123, 255), rgb(0, 74, 153));
+}
+
+.terminator{
+    margin-top: -5px;
+    margin-left: -2.8px;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    background: rgb(0, 74, 153);
+}
+
+.jumbotron {
+    background: linear-gradient(0deg,rgba(0, 51, 153,.15),rgba(26, 102, 255,0.15)),url('../Images/StockSnap_DWQKYDVEKD.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px !important;
+}
+
+.lead {
+    font-size: 23px;
+    justify-content: center;
+}
+
+.display-4 {
+    font-size: 53px;
+    overflow: hidden;
+    justify-content: center;
+    color: white;
+}
+
+@media (min-width:1080px) {
+    
+    .jumbotron {
+        height: 500px !important;
+    }
+    .jumbotron .display-4 {
+        position: relative;
+        left: -100px !important;
+        font-size: 120px;
+        overflow: hidden;
+    }
+    .jumbotron .lead {
+        font-size: 40px;
+        justify-content: center;
+    }
+
+}
+
+.jumbotron-2 {
+    position: absolute;
+    background: rgba(0,0,0,.6);
+    margin-top: 20px;
+    height: 190px !important;
+}
+
+.display-3 {
+    margin-top: -20px !important;
+    font-size: 30px;
+    color: white;
+}
+
+.jumbotron-2 p {
+    border-top: 2px solid white;
+    padding-top: 20px;
+    font-size: 16px;
+}
+
+@media (min-width:1080px) {
+    .jumbotron-2 {
+        height: 300px !important;
+    }
+    
+    .jumbotron-2 .lead {
+        font-size: 25px;
+    }
+}

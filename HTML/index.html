@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Himanshu</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/style.css">
+    </head>
+    <body onload="preLoader()">
+        
+        <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-expand-md navbar-dark bg-dark">
+              <a class="navbar-brand brand" href style="#">LOGO</a>
+              <h1 class="text-md-center">FreeBee</h1>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item gallery">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#" style="color: black !important;">Action</a>
+                      <a class="dropdown-item" href="#" style="color: black !important;">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#" style="color: black !important;">Something else here</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li>
+                  <li class="nav-item clear">
+                    <a class="nav-link"><input type="submit" value="Register" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-xl"></a>
+                  </li>
+                  <li class="nav-item clear">
+                    <a class="nav-link"><input type="submit" value="Login" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-xl"></a>
+                  </li>
+                </ul>
+              </div>
+        </nav>
+        <hr id="break">
+        
+
+        <div class="loader">
+                <div class="loader-container">
+                <div id="one"></div>  
+                <div id="two"></div> 
+                <div id="three"></div> 
+                <div id="four"></div> 
+                <div id="five"></div> 
+                <p>Loading<span>.</span><span>.</span><span>.</span></p>
+            </div>
+        </div>
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-4">I AM A FREELANCER</h1>
+            <p class="lead" style="color: rgba(255,255,255,.6)">With speciality in UI, UX, SEO and Responsive Design</p>
+          </div>
+        </div>
+        
+        <div class="skill-container">
+            <h1 class="text-center">My Skills</h1>
+            <p>HTML</p><div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="terminator"></div>
+            </div>
+            <p>CSS</p>
+            <div class="progress">
+              <div class="progress-bar w-90" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="terminator"></div>
+            </div>
+            <p>Javascript</p>
+            <div class="progress">
+              <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="terminator"></div>
+            </div>
+            <p>Bootstrap</p>
+            <div class="progress">
+              <div class="progress-bar w-80" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="terminator"></div>
+            </div>
+            <p>p5.js</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="terminator"></div>
+            </div>
+            <p>Node.js</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="terminator"></div>
+            </div>
+            <p>SQL</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="terminator"></div>
+            </div>
+        </div>
+        
+        
+        <div class="jumbotron jumbotron-fluid jumbotron-2">
+          <div class="container">
+            <h1 class="display-3 text-center">Contact Us</h1>
+            <p class="lead text-center" style="color: rgba(255,255,255,.6)">Contact No.: +919717967353<br>Email:<a href="#">hsingh09717@gmail.com</a>
+                <br>Address: E-296/29A, MB Extension, Badarpur, New Delhi  
+            </p>
+          </div>
+        </div>
+
+        <script>
+            var preloader = document.querySelector(".loader");
+            function preLoader() {
+                preloader.style.display = 'none';
+            }
+        </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+    </body>
+</html>
